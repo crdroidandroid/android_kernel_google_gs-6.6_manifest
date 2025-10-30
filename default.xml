@@ -12,11 +12,18 @@
   <default revision="refs/heads/lineage-24.0"
            remote="github"
            sync-c="true"
+           sync-tags="false"
            sync-j="4" />
+
+  <remote  name="crdroid"
+           fetch="https://github.com/"
+           sync-c="true"
+           sync-j="4"
+           revision="refs/heads/17.0" />
 
   <project path="build/bazel_common_rules" name="platform/build/bazel_common_rules" remote="aosp" />
   <project path="build/kernel" name="kernel/build" remote="aosp" />
-  <project path="common/gki" name="kernel/common" remote="aosp" revision="refs/tags/android15-6.6-2026-01_r41">
+  <project path="common/gki" name="kernel/common" remote="aosp" revision="refs/tags/android15-6.6-2026-01_r41" clone-depth="1">
     <linkfile dest="common/build.config.constants" src="build.config.constants" />
     <linkfile dest="common/modules.bzl" src="modules.bzl" />
     <linkfile dest=".clang-format" src=".clang-format" />
@@ -37,16 +44,16 @@
   <project path="external/toybox" name="platform/external/toybox" remote="aosp" />
   <project path="external/zlib" name="platform/external/zlib" remote="aosp" />
   <project path="external/zopfli" name="platform/external/zopfli" remote="aosp" />
-  <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" clone-depth="1" remote="aosp" />
-  <project path="prebuilts/clang-tools" name="platform/prebuilts/clang-tools" clone-depth="1" remote="aosp" />
-  <project path="prebuilts/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" clone-depth="1" remote="aosp" />
-  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" clone-depth="1" remote="aosp" />
-  <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" clone-depth="1" remote="aosp" />
-  <project path="prebuilts/ndk-r26" name="toolchain/prebuilts/ndk/r26" clone-depth="1" remote="aosp" />
-  <project path="prebuilts/rust" name="platform/prebuilts/rust" clone-depth="1" remote="aosp" />
+  <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" clone-depth="1" sync-c="true" sync-tags="false" remote="aosp" />
+  <project path="prebuilts/clang-tools" name="platform/prebuilts/clang-tools" clone-depth="1" sync-c="true" sync-tags="false" remote="aosp" />
+  <project path="prebuilts/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" clone-depth="1" sync-c="true" sync-tags="false" remote="aosp" />
+  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" clone-depth="1" sync-c="true" sync-tags="false" remote="aosp" />
+  <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" clone-depth="1" sync-c="true" sync-tags="false" remote="aosp" />
+  <project path="prebuilts/ndk-r26" name="toolchain/prebuilts/ndk/r26" clone-depth="1" sync-c="true" sync-tags="false" remote="aosp" />
+  <project path="prebuilts/rust" name="platform/prebuilts/rust" clone-depth="1" sync-c="true" sync-tags="false" remote="aosp" />
   <project path="tools/mkbootimg" name="platform/system/tools/mkbootimg" remote="aosp" />
 
-  <project path="manifest" name="LineageOS/android_kernel_google_gs-6.6_manifest" />
+  <project path="manifest" name="crdroidandroid/android_kernel_google_gs-6.6_manifest" remote="crdroid" />
   <project path="prebuilts/gki" name="LineageOS/android_kernel_google_gs-6.6_prebuilts_gki" clone-depth="1" />
   <project path="private/devices" name="LineageOS/android_kernel_google_gs-6.6_devices">
     <linkfile dest="AGENTS.md" src="google/common/workspace/root.AGENTS.md" />
@@ -74,5 +81,5 @@
     <linkfile dest="build_rango.sh" src="google/rango/build_rango.sh" />
     <linkfile dest="build_stallion.sh" src="google/stallion/build_stallion.sh" />
   </project>
-  <project path="private/google-modules" name="LineageOS/android_kernel_google_gs-6.6_google-modules" />
+  <project path="private/google-modules" name="LineageOS/android_kernel_google_gs-6.6_google-modules" clone-depth="1" />
 </manifest>
