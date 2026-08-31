@@ -50,16 +50,16 @@
   <project path="external/toybox" name="platform/external/toybox" remote="aosp" />
   <project path="external/zlib" name="platform/external/zlib" remote="aosp" />
   <project path="external/zopfli" name="platform/external/zopfli" remote="aosp" />
-  <project path="prebuilts/asuite" name="platform/prebuilts/asuite" clone-depth="1" sync-c="true" sync-tags="false" remote="aosp" />
-  <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" clone-depth="1" sync-c="true" sync-tags="false" remote="aosp" />
-  <project path="prebuilts/clang-tools" name="platform/prebuilts/clang-tools" clone-depth="1" sync-c="true" sync-tags="false" remote="aosp" />
-  <project path="prebuilts/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" clone-depth="1" sync-c="true" sync-tags="false" remote="aosp" />
-  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" clone-depth="1" sync-c="true" sync-tags="false" remote="aosp" />
-  <project path="prebuilts/jdk/jdk11" name="platform/prebuilts/jdk/jdk11" clone-depth="1" sync-c="true" sync-tags="false" remote="aosp" />
-  <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" clone-depth="1" sync-c="true" sync-tags="false" remote="aosp" />
-  <project path="prebuilts/ndk-r26" name="toolchain/prebuilts/ndk/r26" clone-depth="1" sync-c="true" sync-tags="false" remote="aosp" />
-  <project path="prebuilts/rust" name="platform/prebuilts/rust" clone-depth="1" sync-c="true" sync-tags="false" remote="aosp" />
-  <project path="prebuilts/tradefed" name="platform/tools/tradefederation/prebuilts" clone-depth="1" sync-c="true" sync-tags="false" remote="aosp" />
+  <project path="prebuilts/asuite" name="platform/prebuilts/asuite" revision="main-kernel-build-2024" clone-depth="1" sync-c="true" sync-tags="false" remote="aosp" />
+  <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" revision="main-kernel-build-2024" clone-depth="1" sync-c="true" sync-tags="false" remote="aosp" />
+  <project path="prebuilts/clang-tools" name="platform/prebuilts/clang-tools" revision="main-kernel-build-2024" clone-depth="1" sync-c="true" sync-tags="false" remote="aosp" />
+  <project path="prebuilts/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" revision="main-kernel-build-2024" clone-depth="1" sync-c="true" sync-tags="false" remote="aosp" />
+  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" revision="main-kernel-build-2024" clone-depth="1" sync-c="true" sync-tags="false" remote="aosp" />
+  <project path="prebuilts/jdk/jdk11" name="platform/prebuilts/jdk/jdk11" revision="main-kernel-build-2024" clone-depth="1" sync-c="true" sync-tags="false" remote="aosp" />
+  <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" revision="main-kernel-build-2024" clone-depth="1" sync-c="true" sync-tags="false" remote="aosp" />
+  <project path="prebuilts/ndk-r26" name="toolchain/prebuilts/ndk/r26" revision="main-kernel-build-2024" clone-depth="1" sync-c="true" sync-tags="false" remote="aosp" />
+  <project path="prebuilts/rust" name="platform/prebuilts/rust" revision="main-kernel-build-2024" clone-depth="1" sync-c="true" sync-tags="false" remote="aosp" />
+  <project path="prebuilts/tradefed" name="platform/tools/tradefederation/prebuilts" revision="main-kernel-build-2024" clone-depth="1" sync-c="true" sync-tags="false" remote="aosp" />
   <project path="tools/mkbootimg" name="platform/system/tools/mkbootimg" remote="aosp" />
 
   <project path="manifest" name="crdroidandroid/android_kernel_google_gs-6.6_manifest" remote="crdroid" />
