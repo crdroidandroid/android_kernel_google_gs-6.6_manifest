@@ -59,7 +59,7 @@
   <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" clone-depth="1" sync-c="true" sync-tags="false" remote="aosp" />
   <project path="prebuilts/ndk-r26" name="toolchain/prebuilts/ndk/r26" clone-depth="1" sync-c="true" sync-tags="false" remote="aosp" />
   <project path="prebuilts/rust" name="platform/prebuilts/rust" clone-depth="1" sync-c="true" sync-tags="false" remote="aosp" />
-  <project path="prebuilts/tradefed" name="platform/tools/tradefederation/prebuilts" clone-depth="1" remote="aosp" />
+  <project path="prebuilts/tradefed" name="platform/tools/tradefederation/prebuilts" clone-depth="1" sync-c="true" sync-tags="false" remote="aosp" />
   <project path="tools/mkbootimg" name="platform/system/tools/mkbootimg" remote="aosp" />
 
   <project path="manifest" name="crdroidandroid/android_kernel_google_gs-6.6_manifest" remote="crdroid" />
